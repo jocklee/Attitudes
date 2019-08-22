@@ -1,0 +1,21 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.180.144:3306/morning?useSSL=true
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    cache: false
+  mvc:
+    favicon:
+      enabled: false
+
+server:
+  servlet:
+    context-path: /morning
+  port: 8089
